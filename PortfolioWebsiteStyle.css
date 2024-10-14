@@ -1,0 +1,192 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    background-color: #222222;
+}
+
+#LPHeader{
+    width:100%;
+    height: 10%;
+    margin:0px;
+    padding: 0px;
+}
+
+#TextLogo{
+    font-family: Bungee;
+    background-image:url(images/HeaderImage.png);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    padding: 0px;
+    background-size: contain;
+}
+
+#LPBody {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.box {
+    flex: 1;
+    margin: 0px;
+    transition: flex 0.3s ease, background-size 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    opacity: 0.3;
+}
+
+#box1 {
+    justify-content: right;
+}
+
+#box2 {
+    justify-content: center;
+}
+
+#box3 {
+    justify-content: left;
+}
+
+#ProjectColumnStyle{
+    padding:30px;
+    font-size: 2vw;
+    text-align: center;
+    font-family:arial;
+    font-weight: 900;
+}
+
+#DecoEdge{
+    background-color: #343434;
+    width:100%;
+    height:5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#DecoBox{
+    height: 1vh;
+    width: 1vh;
+    background-color: blueviolet;
+}
+
+#Footer{
+    background-color: #343434;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: end;
+}
+
+#FooterContainer{
+    margin:1%;
+    width: fit-content;
+    align-self: center;
+}
+
+#Link{
+    font-family: verdana;
+    font-size: 20px;
+    color: #ddbcfc;
+    text-decoration: none;
+    text-align: center;
+}
+#LinkActive{
+    font-family: verdana;
+    font-size: 20px;
+    color:rgb(107, 105, 109);
+    text-decoration: none;
+    text-align: center;
+}
+
+#LPBoxText{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    place-content: center;
+    position: absolute;
+}
+
+#LPBoxLink{
+    font-family: verdana;
+    font-size: 4vw;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#ffffff, #ddbcfc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#Header{
+    font-family: verdana;
+    color: #ddbcfc;
+    font-size: 4vmin;
+    text-align: center;
+    font-weight: bold;
+}
+
+#centCont{
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#Icon{
+    padding-right: 1vw;
+}
+
+#ContactLink {
+    position: relative;
+    color:#7d7474;
+    font-family: verdana;
+    font-size: auto;
+  }
+  
+#ContactLink::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ddbcfc;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+    }
+  
+  #ContactLink:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  #ContactLink:hover{
+    color:#ddbcfc;
+  }
+
+  #ContactBox{
+    width:33.3%;
+    height:20vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    place-content: center;
+    text-align: center;
+  }
