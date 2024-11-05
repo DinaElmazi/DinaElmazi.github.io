@@ -6,25 +6,25 @@
     <title>Dina Elmazi Portfolio Website</title>
     <link rel="stylesheet" href="PortfolioWebsiteStyle.css">
 </head>
-<header style="height:12vmin;">
+<header>
 </header>
 <body style="margin:0;padding:0;">
     <div style="height: 65vh;padding-top: 2vmin;">
-        <div style="display: flex; background-color: beige;flex-direction: column;">
-            <div id="ProjectColumnStyle">
-                <h1>
-                3D Project 1
-                </h1>
+        <div style="display: flex;flex-direction: column;">
+            <!-- Damians Descent -->
+            <button class="collapsable" id="CollapsableDiv" style="background-image:url(images/3D/DamiansDescentCover.png)"></button>
+            <div class="content">
+            <p>Lorem ipsum...</p>
             </div>
-            <div id="ProjectColumnStyle">
-                <h1>
-                3D Project 2
-                </h1>
+            <!-- Thorvaldsens -->
+            <button class="collapsable" id="CollapsableDiv" style="background-image:url(images/3D/ThorvaldsensCover.png)"></button>
+            <div class="content">
+            <p>Lorem ipsum...</p>
             </div>
-            <div id="ProjectColumnStyle">
-                <h1>
-                3D Project 3
-                </h1>
+            <!-- Thorvaldsens -->
+            <button class="collapsable" id="CollapsableDiv" style="background-image:url()">Heyo</button>
+            <div class="content">
+            <p>Lorem ipsum...</p>
             </div>
        </div>
     </div>
@@ -33,8 +33,9 @@
         <div id="DecoBox"></div>
         <div id="DecoBox"></div>
     </div>
+    <script src="CollapsableContent.js"></script>
 </body>
-<footer style="background-color: #343434;height:12vmin;">
+<footer style="background-color: #343434;">
     <div id="Footer">
         <div id="FooterContainer">
             <a href="index.html" id="Link">Home</a>
@@ -48,7 +49,7 @@
         <div id="FooterContainer">
             <p id="Link">|</p>
         </div>
-        <div id="FooterContainer" style="margin-right: 3%;color: blue;">
+        <div id="FooterContainer" style="margin-right: 3%;">
             <a href="Contact.html" id="Link">Contact</a>
         </div>
     </div>
