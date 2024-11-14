@@ -231,3 +231,33 @@ Header,Footer{
 .active:after {
     content: "\1F783";
 }
+
+/* Tab Nav Links*/
+
+#NavLink{
+    background-color: #222222;
+    width:15%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Impact;
+    font-size: 1.7vw;
+    color: #ddbcfc;
+}
+
+#NavLinkActive{
+    background-color: rgba(53, 53, 53, 0.85);
+    width:15%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Impact;
+    font-size: 1.7vw;
+    color: #ddbcfc;
+}
