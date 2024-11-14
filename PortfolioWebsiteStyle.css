@@ -246,6 +246,7 @@ Header,Footer{
     font-family: Impact;
     font-size: 1.7vw;
     color: #ddbcfc;
+    border-radius: 100px 100px 0px 0px;
 }
 
 #NavLinkActive{
@@ -260,4 +261,5 @@ Header,Footer{
     font-family: Impact;
     font-size: 1.7vw;
     color: #ddbcfc;
+    border-radius: 100px 100px 0px 0px;
 }
