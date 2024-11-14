@@ -244,7 +244,7 @@ Header,Footer{
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: Impact;
-    font-size: 1.7vw;
+    font-size: 1.5vmin;
     color: #ddbcfc;
     border-radius: 100px 100px 0px 0px;
 }
@@ -259,7 +259,7 @@ Header,Footer{
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: Impact;
-    font-size: 1.7vw;
+    font-size: 2vmin;
     color: #ddbcfc;
     border-radius: 100px 100px 0px 0px;
 }
@@ -272,4 +272,53 @@ Header,Footer{
     background-image: url(images/LeftBox.png);
     background-position: center top;
     background-size: cover;
+}
+
+/* Folder Gallery Image Styling*/
+
+#gallery{
+    width: 23vw;
+    height: 23vw;
+    object-fit: cover;
+    border: 4px solid rgba(0, 0, 0, 0.358);
+}
+
+#galleryContainer{
+    height: 58vh;
+    display: grid;
+    grid-template-columns: repeat(4,23vw);
+    background-color: rgba(53, 53, 53, 0.85);
+    overflow-y:scroll;
+    align-content: center top;
+    justify-content:center;
+}
+
+/* Scrollbar styling*/
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+::-webkit-scrollbar-track {
+    background: #616161;
+}
+::-webkit-scrollbar-thumb {
+    background: #383838;
+}
+::-webkit-scrollbar-thumb {
+    background: #101010;
+}
+
+/* Image Modality */
+#modal{
+    background-color: #222222;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter:blur(2px);
+    display:none;
+}
+
+#modal.active{
+    display:grid;
+    place-items:center;
 }
