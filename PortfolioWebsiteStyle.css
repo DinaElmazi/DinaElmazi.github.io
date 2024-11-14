@@ -263,3 +263,13 @@ Header,Footer{
     color: #ddbcfc;
     border-radius: 100px 100px 0px 0px;
 }
+
+/* Folder Container Styling*/
+
+#FolderContainer{
+    margin:0;
+    padding:0;
+    background-image: url(images/LeftBox.png);
+    background-position: center top;
+    background-size: cover;
+}

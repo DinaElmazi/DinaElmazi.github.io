@@ -7,25 +7,17 @@
     <link rel="stylesheet" href="PortfolioWebsiteStyle.css">
 </head>
 <header>
+    <p id="TextLogo" style="text-align:center;font-size: 5vmin;margin: 0;padding: 0;">DINA ELMAZI</p>
 </header>
-<body style="margin:0;padding:0;">
+<body id="FolderContainer">
     <div style="height: 65vh;padding-top: 2vmin;">
-        <div style="display: flex; background-color: beige;flex-direction: column;">
-            <div id="ProjectColumnStyle">
-                <h1>
-                ETC 1
-                </h1>
-            </div>
-            <div id="ProjectColumnStyle">
-                <h1>
-                ETC 2
-                </h1>
-            </div>
-            <div id="ProjectColumnStyle">
-                <h1>
-                ETC 3
-                </h1>
-            </div>
+        <div style="display: flex;justify-content: space-around;">
+            <div id="NavLink" onclick="window.location='2DProjects.html';"><a>2D</a></div>
+            <div id="NavLink" onclick="window.location='3DProjects.html';"><a>3D</a></div>
+            <div id="NavLink" onclick="window.location='UI.html';"><a>UI</a></div>
+            <div id="NavLinkActive" onclick="window.location='VolunteerWork.html';"><a>Volunteering</a></div>
+        </div>
+        <div style="display: flex; background-color: rgba(53, 53, 53, 0.85);flex-direction: column;height: 60vh;overflow-y: scroll;">
        </div>
     </div>
     <div id="DecoEdge" style="margin-bottom: 2vh;">
