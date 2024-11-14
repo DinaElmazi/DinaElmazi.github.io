@@ -2,14 +2,14 @@ const modal=document.createElement('div');
 modal.id='modal';
 document.body.appendChild(modal);
 
-const images=document.querySelectorAll('.img');
+const images = document.querySelectorAll('#gallery');
 
 images.forEach(image=>{
     image.addEventListener('click',()=>{
         modal.classList.add('active');
         const img=document.createElement('img');
         img.src=image.src;
-        img.id="img";
+        img.id="modalImage";
         while(modal.firstChild){
             modal.removeChild(modal.firstChild)
         }
