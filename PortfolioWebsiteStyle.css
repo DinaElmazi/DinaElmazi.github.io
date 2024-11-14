@@ -18,7 +18,7 @@ Header,Footer{
 }
 
 #TextLogo{
-    font-family: Bungee,verdana;
+    font-family: Bungee,Impact;
     background-image:url(images/HeaderImage.png);
     background-clip: text;
     -webkit-background-clip: text;
