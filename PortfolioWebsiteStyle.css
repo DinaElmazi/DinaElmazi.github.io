@@ -15,6 +15,9 @@ Header,Footer{
     font-size: 4vmin;
     text-align: center;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 #TextLogo{
