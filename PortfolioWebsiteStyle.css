@@ -25,6 +25,7 @@ Header,Footer{
     color:transparent;
     padding: 0px;
     background-size: contain;
+    font-weight: bolder;
 }
 
 /* Landing Page Image Redirector */
