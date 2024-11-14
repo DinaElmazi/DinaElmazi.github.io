@@ -18,6 +18,7 @@ Header,Footer{
     align-items: center;
     justify-content: center;
     align-content: center;
+    display: flex;
 }
 
 #TextLogo{
