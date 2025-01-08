@@ -130,7 +130,7 @@ footer{
     #BoxL {justify-content: center;align-items: end;}
     #BoxM {justify-content: center;align-items: center;}
     #BoxR {justify-content: center;align-items: baseline}
-    #LPImageRedirectors{width:100%;height: fit-content;}
+    #LPImageRedirectors{width:100%;height: auto;}
     #LPBoxLink{font-size: 7vw;}
 }
 
