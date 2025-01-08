@@ -4,43 +4,79 @@ html{
     background-color: #222222;
 }
 
-Header,Footer{
-    height:12vmin;
+/*--- Basic Styling ---*/
+
+header{
+    height: 12vh;
+    text-align: center;
+    align-content: center;
 }
 
-/* Header & Textlogo */
-#Header{
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#Content{
+    height:65vh;
+    display: flex;
+}
+
+footer{
+    height: 12vh;
+    background-color: #343434;
+}
+
+/*--- Header Textlogo Styling---*/
+#MaskImage{width:100%;}
+
+/*--- LP Box Styling ---*/
+#BoxL{background-color: aqua;}
+#BoxM{background-color: blue;}
+#BoxR{background-color: azure;}
+
+/*--- Footer Content Styling ---*/
+#FooterContainer{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap:1vw;
+    margin-right:3vw;
+}
+
+/* Link Styling */
+#Link{
     font-family: verdana;
     color: #ddbcfc;
-    font-size: 4vmin;
-    text-align: center;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    text-decoration: none;
+}
+#Link:hover{color: #9549dc;}
+
+#LinkActive{
+    font-family: verdana;
+    color:rgb(148, 147, 150);
+    text-decoration: none;
+}
+
+/* Decorative Edge */
+#DecoEdge{
+    background-color: #343434;
+    width:100%;
+    height:0.5vh;
     display: flex;
-    justify-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2vh;
 }
 
-#TextLogo{
-    font-family: Bungee,Impact;
-    background-image:url(images/HeaderImage.png);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color:transparent;
-    padding: 0px;
-    background-size: contain;
-    font-weight: bolder;
+#DecoBox{
+    height: 1vh;
+    width: 1vh;
+    background-color: blueviolet;
 }
 
-/* Landing Page Image Redirector */
-.LPRedirector {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: width 0.3s ease;
-}
-
+/* Landing Page Redirectors */
 .box {
     flex: 1;
     margin: 0px;
@@ -48,19 +84,6 @@ Header,Footer{
     overflow: hidden;
     position: relative;
     display: flex;
-    opacity: 0.3;
-}
-
-#box1 {
-    justify-content: right;
-}
-
-#box2 {
-    justify-content: center;
-}
-
-#box3 {
-    justify-content: left;
 }
 
 /* Landing Page Textboxes */
@@ -75,8 +98,6 @@ Header,Footer{
 
 #LPBoxLink{
     font-family: verdana;
-    font-size: 4vw;
-    text-decoration: none;
     text-align: center;
     font-weight: bold;
     background: -webkit-linear-gradient(#ffffff, #ddbcfc);
@@ -84,51 +105,33 @@ Header,Footer{
     -webkit-text-fill-color: transparent;
 }
 
-/* Footer */
-#Footer{
-    background-color: #343434;
-    width:100%;
-    height:100%;
-    display: flex;
-    justify-content: end;
+/* Media Query Portrait and Landscape Separators */
+@media only screen and (orientation: landscape)
+{
+    #TextLogo{width: 22vw;}
+    #Content{flex-direction: row;}
+    .box{width: 33.33%;opacity: 0.3;}
+    #Link{font-size: 1.5vw;}
+    #LinkActive{font-size: 1.5vw;}
+    #BoxL {justify-content: right;}
+    #BoxM {justify-content: center;}
+    #BoxR {justify-content: left;}
+    #LPImageRedirectors{height:100%;width:auto;}
+    #LPBoxLink{font-size: 4vw;}
 }
-
-#FooterContainer{
-    margin:1%;
-    width: fit-content;
-    align-self: center;
-}
-
-/* Decorative Edge */
-#DecoEdge{
-    background-color: #343434;
-    width:100%;
-    height:5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#DecoBox{
-    height: 1vh;
-    width: 1vh;
-    background-color: blueviolet;
-}
-
-/* General Link Styling */
-#Link{
-    font-family: verdana;
-    font-size: 1.7vw;
-    color: #ddbcfc;
-    text-decoration: none;
-    text-align: center;
-}
-#LinkActive{
-    font-family: verdana;
-    font-size: 1.7vw;
-    color:rgb(107, 105, 109);
-    text-decoration: none;
-    text-align: center;
+@media only screen and (orientation: portrait)
+{
+    header{margin-top: 2.5vh;}
+    #TextLogo{width: 70vw;}
+    #Content{flex-direction: column;}
+    .box{height: 33.33%;opacity:1;}
+    #Link{font-size: 2.5vh;}
+    #LinkActive{font-size: 2.5vh;}
+    #BoxL {justify-content: center;align-items: end;}
+    #BoxM {justify-content: center;align-items: center;}
+    #BoxR {justify-content: center;align-items: baseline}
+    #LPImageRedirectors{width:100%;height: fit-content;}
+    #LPBoxLink{font-size: 7vw;}
 }
 
 /* Centered Content Divs */
@@ -183,59 +186,6 @@ Header,Footer{
     align-content: center;
     place-content: center;
     text-align: center;
-}
-
-/* Collapsable Divs */
-.collapsable {
-    border: none;
-    outline: none;
-    opacity: 0.4;
-}
-  
-#CollapsableDiv{
-    background-color: #ddbcfc1d;
-    font-size: 5vmin;
-    text-align: center;
-    align-content: center;
-    font-family:arial;
-    font-weight: 900;
-    background-size: cover;
-    background-position: center;
-    height: 15vh;
-    padding: 0;
-    margin: 0;
-}
-
-.collapsable:hover {
-    opacity: 1.0;
-}
-
-.content {
-    padding: 1vh;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-.collapsable:after {
-    content: '\1F782';
-    font-size: 5vmin;
-    color: white;
-    float: right;
-    margin-right: 4vw;
-}
-
-/* Collapsable Content Indicator Symbols*/
-.collapsable:after {
-    content: '\1F782';
-    font-size: 5vmin;
-    color: white;
-    float: right;
-    margin-right: 4vw;
-}
-  
-.active:after {
-    content: "\1F783";
 }
 
 /* Tab Nav Links*/
@@ -313,7 +263,7 @@ Header,Footer{
     background: #101010;
 }
 
-/* Image Modality */
+/* Image Modals */
 #modal{
     background-color: #22222258;
     position: fixed;
