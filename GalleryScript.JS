@@ -1,22 +1,17 @@
-const modal=document.createElement('div');
-modal.id='modal';
-document.body.appendChild(modal);
+const modal = document.querySelector("div.modal");
+const modalImg = document.getElementById("modalImg");
+const modalCloser = document.querySelector(".modalCloser");
 
-const images = document.querySelectorAll('#gallery');
+const images = document.querySelectorAll('.galleryImg');
 
-images.forEach(image=>{
-    image.addEventListener('click',()=>{
-        modal.classList.add('active');
-        const img=document.createElement('img');
-        img.src=image.src;
-        img.id="modalImage";
-        while(modal.firstChild){
-            modal.removeChild(modal.firstChild)
-        }
-        modal.append(img);
+images.forEach(img=>{
+    img.addEventListener('click',()=>{
+        modal.style.display = "flex";
+        modalImg.src = img.src;
     });
 });
 
-modal.addEventListener('click',()=>{
-    modal.classList.remove('active');
+// When the user clicks on <span> (x), close the modal
+modalCloser.addEventListener('click',()=>{
+  modal.style.display = "none";
 });
