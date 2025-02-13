@@ -48,6 +48,15 @@ H1,H2,H3,H4,H5,H6,p{
 }
 
 /* Link Styling */
+a{
+    font-family: verdana;
+    color: #ddbcfc;
+}
+
+a:hover{
+    color: #9549dc;
+}
+
 #Link{
     font-family: verdana;
     color: #ddbcfc;
@@ -127,6 +136,7 @@ H1,H2,H3,H4,H5,H6,p{
     #BoxM {justify-content: center;}
     #BoxR {justify-content: left;}
     #LPBoxLink{font-size: 4vw;}
+    #TOSBody{margin: 7vh 15vw 7vh 15vw;}
 }
 @media only screen and (orientation: portrait)
 {
@@ -140,6 +150,7 @@ H1,H2,H3,H4,H5,H6,p{
     #BoxM {justify-content: center;align-items: center;}
     #BoxR {justify-content: center;align-items: baseline}
     #LPBoxLink{font-size: 7vw;}
+    #TOSBody{margin: 15vh 12vw 7vh 12vw;}
 }
 
 /* Centered Content Divs */
