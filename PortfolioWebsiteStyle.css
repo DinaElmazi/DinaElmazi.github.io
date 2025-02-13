@@ -34,10 +34,17 @@ footer{
 #FooterContainer{
     height: 100%;
     display: flex;
-    justify-content: end;
+    flex-direction: row;
     align-items: center;
-    gap:1vw;
+    justify-content: space-between;
     margin-right:3vw;
+    margin-left:3vw;
+}
+
+/* Text Styling */
+H1,H2,H3,H4,H5,H6,p{
+    font-family: verdana;
+    color: #f2e5fe;
 }
 
 /* Link Styling */
