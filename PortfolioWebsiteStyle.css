@@ -47,6 +47,10 @@ H1,H2,H3,H4,H5,H6,p{
     color: #f2e5fe;
 }
 
+h2{
+    margin-top: 5vh;
+}
+
 /* Link Styling */
 a{
     font-family: verdana;
@@ -62,6 +66,7 @@ a:hover{
     color: #ddbcfc;
     text-decoration: none;
 }
+
 #Link:hover{color: #9549dc;}
 
 #LinkActive{
@@ -130,13 +135,13 @@ a:hover{
     #Content{flex-direction: row;}
     .box{opacity: 0.3;}
     .box:hover{flex:3;opacity: 1;}
-    #Link{font-size: 1.5vw;}
-    #LinkActive{font-size: 1.5vw;}
+    #Link,#LinkActive{font-size: 1.5vh;}
     #BoxL {justify-content: right;}
     #BoxM {justify-content: center;}
     #BoxR {justify-content: left;}
     #LPBoxLink{font-size: 4vw;}
-    #TOSBody{margin: 7vh 15vw 7vh 15vw;}
+    #TOSBody{margin: 7vh 30vw 7vh 30vw;}
+    .Socials{width:30vw;height:30vw;max-width:22vw;max-height:22vw;}
 }
 @media only screen and (orientation: portrait)
 {
@@ -144,13 +149,14 @@ a:hover{
     #TextLogo{width: 70vw;}
     #Content{flex-direction: column;}
     .box{opacity:1;}
-    #Link{font-size: 2.5vh;}
-    #LinkActive{font-size: 2.5vh;}
-    #BoxL {justify-content: center;align-items: end;}
-    #BoxM {justify-content: center;align-items: center;}
-    #BoxR {justify-content: center;align-items: baseline}
+    #Link,#LinkActive{font-size: 4.3vw;}
+    #BoxL,#BoxM,#BoxR{justify-content: center;}
+    #BoxL {align-items: end;}
+    #BoxM {align-items: center;}
+    #BoxR {align-items: baseline}
     #LPBoxLink{font-size: 7vw;}
     #TOSBody{margin: 15vh 12vw 7vh 12vw;}
+    .Socials{height: 30%;aspect-ratio: 1;}
 }
 
 /* Centered Content Divs */
@@ -238,6 +244,17 @@ a:hover{
     color: #ddbcfc;
     border-radius: 100px 100px 0px 0px;
 }
+
+/* Socials Redirector boxes */
+.Socials{
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#Insta{background-image: url(images/Instagram.png);}
+#LinkedIn{background-image: url(images/LinkedIn.png);}
+#Mail{background-image: url(images/Mail.png);}
 
 /* Folder Container Styling*/
 
