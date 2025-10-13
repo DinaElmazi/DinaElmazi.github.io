@@ -23,7 +23,7 @@ a{color: #CEB0FF;}
     p,a{font-size: clamp(12px, 3.5vmin, 14px);}
 }
 
-@media only screen and (hover:hover)
+@media only screen and (hover: hover)
 {
     .FPContentBox{opacity: 0.5;flex: 1;transition: flex 0.3s ease-in-out;}
     .FPContentBox:hover{flex:3;opacity: 1;}
