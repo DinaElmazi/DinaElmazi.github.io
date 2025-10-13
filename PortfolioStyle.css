@@ -1,0 +1,46 @@
+/*Initial Styling*/
+body,header,footer,div{margin:0;padding:0;}
+footer{display:flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 0 1.2vw 0 1.2vw;}
+
+/*Landing Page Overall Styling*/
+.BodyNoOverflow{display: flex;background-color: #23092e;}
+.FloatingTopLogo{position:fixed;top:0dvh;left:50%;transform: translate(-50%, -0%);}
+.FPContentBox{background-size: cover;display: flex;justify-content: center;align-items: center;}
+
+/*Text Styling*/
+p,a{font-family: montserrat;font-size: 3vmin;}
+p{color: #727272;}
+a{color: #CEB0FF;}
+.FPLink{font-size: clamp(18px, 7vmin, 22px);font-weight: 800;color: white;opacity: 40%;text-align: center;}
+
+/*Orientation Specific Styling & Animation*/
+@media only screen and (orientation: landscape)
+{
+    .BodyNoOverflow{height:95.5dvh;flex-direction: row;}
+    footer{height:4.5dvh;background-color: #202020;}
+    .FloatingTopLogo{height:auto;width:27.5dvw;min-width:400px;}
+    .FPContentBox{width:25%;height:auto;}
+    p,a{font-size: clamp(12px, 3.5vmin, 14px);}
+}
+
+@media only screen and (hover:hover)
+{
+    .FPContentBox{opacity: 0.5;flex: 1;transition: flex 0.3s ease-in-out;}
+    .FPContentBox:hover{flex:3;opacity: 1;}
+    .FPLink,a:hover{opacity: 80%;}
+}
+
+@media only screen and (orientation: portrait)
+{
+    .BodyNoOverflow{height:95.5dvh;flex-direction: column;}
+    footer{height:4.5dvh;background-color: #202020;}
+    .FloatingTopLogo{height:auto;width:70dvw;max-width:300px;}
+    .FPContentBox{height:25%;width:auto;}
+    p,a{font-size: clamp(8px, 3.5vmin, 16px);}
+}
+
+/* Keyframes */
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
