@@ -14,7 +14,7 @@ a{color: #CEB0FF;}
 .FPLink{font-size: clamp(18px, 7vmin, 22px);font-weight: 800;color: white;opacity: 40%;text-align: center;}
 
 /*Orientation Specific Styling & Animation*/
-@media screen and (orientation: landscape)
+@media only screen and (orientation: landscape)
 {
     .BodyNoOverflow{height:95.5dvh;flex-direction: row;}
     footer{height:4.5dvh;background-color: #202020;}
@@ -23,14 +23,14 @@ a{color: #CEB0FF;}
     p,a{font-size: clamp(12px, 3.5vmin, 14px);}
 }
 
-@media screen and (hover: hover)
+@media only screen and (hover)
 {
     .FPContentBox{opacity: 0.5;flex: 1;transition: flex 0.3s ease-in-out;}
     .FPContentBox:hover{flex:3;opacity: 1;}
     .FPLink,a:hover{opacity: 80%;}
 }
 
-@media screen and (orientation: portrait)
+@media only screen and (orientation: portrait)
 {
     .BodyNoOverflow{height:95.5dvh;flex-direction: column;}
     footer{height:4.5dvh;background-color: #202020;}
