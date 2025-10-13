@@ -21,9 +21,10 @@ a{color: #CEB0FF;}
     .FloatingTopLogo{height:auto;width:27.5dvw;min-width:400px;}
     .FPContentBox{width:25%;height:auto;}
     p,a{font-size: clamp(12px, 3.5vmin, 14px);}
+
 }
 
-@media only screen and (hover: hover)
+@media only screen and (any-hover: hover)
 {
     .FPContentBox{opacity: 0.5;flex: 1;transition: flex 0.3s ease-in-out;}
     .FPContentBox:hover{flex:3;opacity: 1;}
