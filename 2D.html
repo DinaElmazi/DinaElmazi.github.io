@@ -32,14 +32,14 @@
         </clipPath>
         </defs>
     </svg>
-    <ul class="NavLinkContainer">
+    <ul class="DesktopLinkContainer">
         <li><a href="2D.html" class="active">2D Art</a></li>
         <li><a href="3DProjects.html">3D Projects</a></li>
         <li><a href="#">University Projects</a></li>
         <li><a href="#">UI & UX</a></li>
         <li><a href="#">Volunteer Work</a></li>
     </ul>
-    <div class="NavSocialsContainer">
+    <div class="NavIcons">
         <a href="mailto:dinacelm@hotmail.com">
             <svg class="SocialsIcon" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M38.01 0.000854492H6.99003C3.12979 0.000854492 0 3.13064 0 6.99088V7.01127L19.2584 24.5752C20.1817 25.4164 21.3319 25.8294 22.4991 25.8311C23.6682 25.8294 24.8166 25.4164 25.7399 24.5752L45 7.01127V6.99088C45 3.13064 41.8701 0.000854492 38.01 0.000854492Z" fill="url(#paint0_linear_65_2)"/>
@@ -88,7 +88,17 @@
             </defs>
         </svg>
         </a>
-        
+        <a onclick="enablePhoneNav()">
+            <svg class="SocialsIcon" id="BurgerMenu" viewBox="0 0 720 560" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M720 40C720 50.6087 715.786 60.7828 708.284 68.2843C700.783 75.7857 690.609 80 680 80H40C29.3913 80 19.2172 75.7857 11.7157 68.2843C4.21427 60.7828 0 50.6087 0 40C0 29.3913 4.21427 19.2172 11.7157 11.7157C19.2172 4.21427 29.3913 0 40 0H680C690.609 0 700.783 4.21427 708.284 11.7157C715.786 19.2172 720 29.3913 720 40ZM720 280C720 290.609 715.786 300.783 708.284 308.284C700.783 315.786 690.609 320 680 320H40C29.3913 320 19.2172 315.786 11.7157 308.284C4.21427 300.783 0 290.609 0 280C0 269.391 4.21427 259.217 11.7157 251.716C19.2172 244.214 29.3913 240 40 240H680C690.609 240 700.783 244.214 708.284 251.716C715.786 259.217 720 269.391 720 280ZM680 560C690.609 560 700.783 555.786 708.284 548.284C715.786 540.783 720 530.609 720 520C720 509.391 715.786 499.217 708.284 491.716C700.783 484.214 690.609 480 680 480H40C29.3913 480 19.2172 484.214 11.7157 491.716C4.21427 499.217 0 509.391 0 520C0 530.609 4.21427 540.783 11.7157 548.284C19.2172 555.786 29.3913 560 40 560H680Z" fill="url(#paint0_linear_76_3)"/>
+                <defs>
+                <linearGradient id="paint0_linear_76_3" x1="360" y1="0" x2="360" y2="560" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#717171"/>
+                <stop offset="1" stop-color="white"/>
+                </linearGradient>
+                </defs>
+            </svg>
+        </a>
     </div>
 </header>
 <body>
@@ -104,3 +114,21 @@
     </div>
 </footer>
 </html>
+<div class="PhoneContainer" style="display: none;">
+        <a class="CrossIcon" onclick="disablePhoneNav()">X</a>
+        <ul>
+            <li><a href="2D.html" class="active">2D Art</a></li>
+            <li><a href="3DProjects.html">3D Projects</a></li>
+            <li><a href="#">University Projects</a></li>
+            <li><a href="#">UI & UX</a></li>
+            <li><a href="#">Volunteer Work</a></li>
+        </ul>
+    </div>
+<script>
+    function enablePhoneNav(){
+        document.querySelector(".PhoneContainer").style.display = "block";
+    }
+    function disablePhoneNav(){
+        document.querySelector(".PhoneContainer").style.display = "none";
+    }
+</script>

@@ -1,5 +1,5 @@
 /*Initial Styling*/
-body{background-image:url(images/PortfolioBG.png);}
+body{background-image:url(images/PortfolioBG.png);background-color: #202020;}
 body,header,footer,div{margin:0;padding:0;}
 footer{display:flex;
     flex-direction: row;
@@ -12,7 +12,8 @@ footer{display:flex;
 
 /*Landing Page Overall Styling*/
 .BodyNoOverflow{display: flex;}
-.FloatingTopLogo{position:fixed;top:0dvh;left:50%;transform: translate(-50%, -0%);}
+.FloatingTopLogo{position:absolute;top:0dvh;left:50%;transform: translate(-50%, -0%);}
+#MidLogo{position:absolute;top:0;left:50%;transform: translate(-50%, -10%);width:80%;height:auto;}
 .FPContentBox{background-size: cover;display: flex;justify-content: center;align-items: center;}
 
 /*Text Styling*/
@@ -47,6 +48,8 @@ a{color: #CEB0FF;}
     .FPLink{font-size: 3.5dvw}
     .Logo{max-width:20vw;}
     .SocialsIcon{width: 2vw;}
+    #MidLogo{margin-top: 4%;}
+    .Logo,.SocialsIcon{margin-top: 20px;}
 }
 
 @media only screen and (any-hover: hover)
@@ -66,6 +69,8 @@ a{color: #CEB0FF;}
     .FPLink{font-size: 6dvh}
     .Logo{max-width:35vw;}
     .SocialsIcon{width: 6vw;}
+    #MidLogo{margin-top: 1dvh;}
+    .Logo,.SocialsIcon{margin-top: 5px;}
 }
 
 /* Keyframes */
@@ -74,7 +79,7 @@ a{color: #CEB0FF;}
     to {transform:scale(1)}
 }
 
-/*Navbar Socials Container*/
+/*Navbar Container*/
 .NavbarHeader{
     display: flex;
     flex-direction: row;
@@ -84,10 +89,10 @@ a{color: #CEB0FF;}
     width: 100%;
 }
 
-.NavSocialsContainer{
+.NavIcons{
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: 10px;
     padding-right: 2vw;
 }
 
@@ -95,6 +100,7 @@ a{color: #CEB0FF;}
     padding-left: 2vw;
 }
 
+/* Navbar Text*/
 ul{
     display: flex;
     gap: 1.2vw;
@@ -103,32 +109,58 @@ ul{
     padding: 0;
     overflow: hidden;
 }
-
+    
 ul li a{
-    font-family: montserrat;
-    font-size: clamp(12px, 1.5vmin, 20px);
     text-align: center;
     background: -webkit-linear-gradient(#9c9c9c, #FFFFFF);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 ul li a:active{
     background: -webkit-linear-gradient(#7E52C7, #CEB0FF);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 ul li a:hover{
-  background: -webkit-linear-gradient(#7E52C7, #CEB0FF);
-  background-clip: text;  
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(#7E52C7, #CEB0FF);
+    background-clip: text;  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.Logo,.SocialsIcon{margin-top: 1vh;}
-
-/* Gallery */
-.GalleryContent{
-    min-height: 92dvh;
+@media only screen and (orientation: landscape)
+{
+    .PhoneContainer{display: none;}
+    #BurgerMenu{display: none;}
+    ul li a{font-size: 1.1vmax;}
 }
+
+@media only screen and (orientation: portrait)
+{
+    .DesktopLinkContainer{display:none;}
+    .PhoneContainer{
+        position: absolute;
+        height: 100dvh;
+        width: 100dvw;
+        z-index: 2;
+        background-color:#202020;
+        justify-content: center;
+        align-content: center;
+    }
+    .PhoneContainer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4dvh;
+    }
+    .PhoneContainer ul li a{font-size: 5vmin;}
+}
+
+.PhoneContainer .CrossIcon{font-weight: 800; font-size: 3vmax;position: absolute;top: 5vmin;right:5vmin;}
+
+/* Gallery
+.GalleryContent{}*/
