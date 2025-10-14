@@ -1,7 +1,14 @@
 /*Initial Styling*/
 body{background-image:url(images/PortfolioBG.png);}
 body,header,footer,div{margin:0;padding:0;}
-footer{display:flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 0 1.2vw 0 1.2vw;}
+footer{display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom:0;
+}
 
 /*Landing Page Overall Styling*/
 .BodyNoOverflow{display: flex;}
@@ -38,6 +45,8 @@ a{color: #CEB0FF;}
     .FPContentBox{width:25%;height:auto;}
     p,a{font-size: clamp(12px, 3.5vmin, 14px);}
     .FPLink{font-size: 3.5dvw}
+    .Logo{max-width:20vw;}
+    .SocialsIcon{width: 2vw;}
 }
 
 @media only screen and (any-hover: hover)
@@ -55,6 +64,8 @@ a{color: #CEB0FF;}
     .FPContentBox{height:25%;width:auto;}
     p,a{font-size: clamp(8px, 3.5vmin, 16px);}
     .FPLink{font-size: 6dvh}
+    .Logo{max-width:35vw;}
+    .SocialsIcon{width: 6vw;}
 }
 
 /* Keyframes */
@@ -69,23 +80,19 @@ a{color: #CEB0FF;}
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position:absolute;
+    width: 100%;
 }
 
 .NavSocialsContainer{
     display: flex;
     flex-direction: row;
-    gap: 1.2vw;
+    gap: 2vw;
     padding-right: 2vw;
 }
 
 .Logo{
-    max-width:20vw;
     padding-left: 2vw;
-}
-
-.SocialsIcon{
-    width: 3vw;
-    height: auto;
 }
 
 ul{
@@ -119,6 +126,9 @@ ul li a:hover{
   -webkit-text-fill-color: transparent;
 }
 
+.Logo,.SocialsIcon{margin-top: 1vh;}
+
+/* Gallery */
 .GalleryContent{
     min-height: 92dvh;
 }
