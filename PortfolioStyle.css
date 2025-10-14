@@ -1,9 +1,10 @@
 /*Initial Styling*/
+body{background-image:url(images/PortfolioBG.png);}
 body,header,footer,div{margin:0;padding:0;}
 footer{display:flex;flex-direction: row;justify-content: space-between;align-items: center;padding: 0 1.2vw 0 1.2vw;}
 
 /*Landing Page Overall Styling*/
-.BodyNoOverflow{display: flex;background-color: #23092e;}
+.BodyNoOverflow{display: flex;}
 .FloatingTopLogo{position:fixed;top:0dvh;left:50%;transform: translate(-50%, -0%);}
 .FPContentBox{background-size: cover;display: flex;justify-content: center;align-items: center;}
 
@@ -11,7 +12,22 @@ footer{display:flex;flex-direction: row;justify-content: space-between;align-ite
 p,a{font-family: montserrat;font-size: 3vmin;}
 p{color: #727272;}
 a{color: #CEB0FF;}
-.FPLink{font-size: clamp(18px, 7vmin, 22px);font-weight: 800;color: white;opacity: 40%;text-align: center;}
+.FPLink{font-weight: 800;
+    background: -webkit-linear-gradient(#9c9c9c, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    filter: drop-shadow(0px 0px 2px #0b0b26);
+}
+.FPContentBox:hover .FPLink{font-weight: 800;
+    background: -webkit-linear-gradient(#7E52C7, #CEB0FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 100%;
+    text-align: center;
+}
 
 /*Orientation Specific Styling & Animation*/
 @media only screen and (orientation: landscape)
@@ -21,14 +37,14 @@ a{color: #CEB0FF;}
     .FloatingTopLogo{height:auto;width:27.5dvw;min-width:400px;}
     .FPContentBox{width:25%;height:auto;}
     p,a{font-size: clamp(12px, 3.5vmin, 14px);}
-
+    .FPLink{font-size: 3.5dvw}
 }
 
 @media only screen and (any-hover: hover)
 {
     .FPContentBox{opacity: 0.5;flex: 1;transition: flex 0.3s ease-in-out;}
     .FPContentBox:hover{flex:3;opacity: 1;}
-    .FPLink,a:hover{opacity: 80%;}
+    a:hover{opacity: 80%;}
 }
 
 @media only screen and (orientation: portrait)
@@ -38,10 +54,71 @@ a{color: #CEB0FF;}
     .FloatingTopLogo{height:auto;width:70dvw;max-width:300px;}
     .FPContentBox{height:25%;width:auto;}
     p,a{font-size: clamp(8px, 3.5vmin, 16px);}
+    .FPLink{font-size: 6dvh}
 }
 
 /* Keyframes */
 @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
+}
+
+/*Navbar Socials Container*/
+.NavbarHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavSocialsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2vw;
+    padding-right: 2vw;
+}
+
+.Logo{
+    max-width:20vw;
+    padding-left: 2vw;
+}
+
+.SocialsIcon{
+    width: 3vw;
+    height: auto;
+}
+
+ul{
+    display: flex;
+    gap: 1.2vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li a{
+    font-family: montserrat;
+    font-size: clamp(12px, 1.5vmin, 20px);
+    text-align: center;
+    background: -webkit-linear-gradient(#9c9c9c, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ul li a:active{
+    background: -webkit-linear-gradient(#7E52C7, #CEB0FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ul li a:hover{
+  background: -webkit-linear-gradient(#7E52C7, #CEB0FF);
+  background-clip: text;  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.GalleryContent{
+    min-height: 92dvh;
 }
