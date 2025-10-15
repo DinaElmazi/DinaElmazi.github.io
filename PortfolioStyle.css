@@ -9,6 +9,7 @@ footer{display:flex;
     width: 100%;
     bottom:0;
 }
+header,footer{z-index:1;}
 
 /*Landing Page Overall Styling*/
 .BodyNoOverflow{display: flex;}
@@ -100,6 +101,8 @@ a{color: #CEB0FF;}
     padding-left: 2vw;
 }
 
+.PhoneContainer .CrossIcon{font-weight: 800; font-size: 3vmax;position: absolute;top: 5vmin;right:5vmin;}
+
 /* Navbar Text*/
 ul{
     display: flex;
@@ -149,7 +152,11 @@ ul li a:hover{
         z-index: 2;
         background-color:#202020;
         justify-content: center;
+        justify-items: center;
         align-content: center;
+        align-items: center;
+        top:0;
+        left:0;
     }
     .PhoneContainer ul{
         display: flex;
@@ -160,7 +167,26 @@ ul li a:hover{
     .PhoneContainer ul li a{font-size: 5vmin;}
 }
 
-.PhoneContainer .CrossIcon{font-weight: 800; font-size: 3vmax;position: absolute;top: 5vmin;right:5vmin;}
 
-/* Gallery
-.GalleryContent{}*/
+
+/* Gallery */
+.GalleryContent{
+    position: absolute;
+    top: 15%;
+    height: 70vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,23vw);
+    background-color: rgba(53, 53, 53, 0.85);
+    overflow-y:scroll;
+    align-content: center t;
+    justify-content:center;
+}
+
+.GalleryImage{
+    width: 23vw;
+    height: 23vw;
+    object-fit: cover;
+    border: 4px solid rgba(0, 0, 0, 0.358);
+    transition: 0.3s;
+}
