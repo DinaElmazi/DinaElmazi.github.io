@@ -1,4 +1,3 @@
-/* New Stuff*/
 function galleryImageAdd(folderName, imageAmount){
   const gallery = document.querySelector(".GalleryContent");
 
