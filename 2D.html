@@ -100,6 +100,16 @@
             </svg>
         </a>
     </div>
+    <div class="PhoneContainer" style="display: none;">
+        <a class="CrossIcon" onclick="disablePhoneNav()">X</a>
+        <ul>
+            <li><a href="2D.html" class="active">2D Art</a></li>
+            <li><a href="3DProjects.html">3D Projects</a></li>
+            <li><a href="#">University Projects</a></li>
+            <li><a href="#">UI & UX</a></li>
+            <li><a href="#">Volunteer Work</a></li>
+        </ul>
+    </div>
 </header>
 <body>
     <div class="GalleryContent">
@@ -108,6 +118,10 @@
         <span class="modalCloser">&times;</span>
         <img id="modalImg">
     </div>
+    <script src="NavbarFunctionality.js"></script>
+    <script src="GalleryScript.js"></script>
+    <script defer>GalleryImageAdd("2DProjects", 62);</script>
+    <script src="Modal.js"></script>
 </body>
 <footer>
     <p style="margin-left: 2vw;">© Dina Elmazi | 2025</p>
@@ -117,17 +131,4 @@
     </div>
 </footer>
 </html>
-<div class="PhoneContainer" style="display: none;">
-    <a class="CrossIcon" onclick="disablePhoneNav()">X</a>
-    <ul>
-        <li><a href="2D.html" class="active">2D Art</a></li>
-        <li><a href="3DProjects.html">3D Projects</a></li>
-        <li><a href="#">University Projects</a></li>
-        <li><a href="#">UI & UX</a></li>
-        <li><a href="#">Volunteer Work</a></li>
-    </ul>
-</div>
-<script src="NavbarFunctionality.js" defer></script>
-<script src="GalleryScript.js" defer></script>
-<script defer>GalleryImageAdd("2DProjects", 62);</script>
-<script src="Modal.js" defer></script>
+
