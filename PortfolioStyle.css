@@ -252,3 +252,17 @@ ul li a:hover{
   color: #b8b8b8;
   text-decoration: none;
 }
+
+/* Scrollbar styling*/
+::-webkit-scrollbar {
+    width: 0.5vw;
+}
+::-webkit-scrollbar-track {
+    background: #616161;
+}
+::-webkit-scrollbar-thumb {
+    background: #383838;
+}
+::-webkit-scrollbar-thumb {
+    background: #c766ff;
+}
