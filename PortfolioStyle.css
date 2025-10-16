@@ -172,7 +172,6 @@ ul li a:hover{
 .GalleryContent{
     display: grid;
     position: absolute;
-    top: 15%;
     height: 75vh;
     width: 100dvw;
     background-color: rgba(53, 53, 53, 0.85);
@@ -191,12 +190,14 @@ ul li a:hover{
 {
     .GalleryContent{
         grid-template-columns: repeat(4,25%);
+        top: 15%;
     }
 }
 @media only screen and (orientation: portrait)
 {
     .GalleryContent{
         grid-template-columns: repeat(2,50%);
+        top: 10%;
     }
 }
 
