@@ -1,5 +1,5 @@
 /* New Stuff*/
-function GalleryImageAdd(folderName, imageAmount){
+function galleryImageAdd(folderName, imageAmount){
   const gallery = document.querySelector(".GalleryContent");
 
     for (let i = 1; i <= imageAmount; i++) {
