@@ -12,7 +12,4 @@ function modalRetriever(){
     
   modalCloser.addEventListener('click',()=>{
   modal.style.display = "none";});
-  
 }
-
-

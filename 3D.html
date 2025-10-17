@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Model Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">
+    {"imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@<1.80.0>/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@<1.80.0>/examples/jsm/"}
+        }
+    </script>
+</head>
+<body>
+  <header>
+    <h1>3D Model Gallery</h1>
+  </header>
+
+  <div id="gallery" class="gallery"></div>
+
+  <!-- Modal Viewer -->
+  <div id="viewer-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-btn">&times;</span>
+      <div id="animation-buttons" class="anim-controls"></div>
+      <div id="viewer"></div>
+    </div>
+  </div>
+
+  <!-- Your main script -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
