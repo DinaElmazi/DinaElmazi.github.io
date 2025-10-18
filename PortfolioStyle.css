@@ -170,7 +170,7 @@ ul li a:hover{
 }
 
 /* Gallery */
-.GalleryContent{
+.Gallery{
     display: grid;
     position: absolute;
     height: 75vh;
@@ -185,18 +185,23 @@ ul li a:hover{
     transition: 0.3s;
     width:100%;
     aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.Gallery img:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (orientation: landscape)
 {
-    .GalleryContent{
+    .Gallery{
         grid-template-columns: repeat(4,25%);
         top: 15%;
     }
 }
 @media only screen and (orientation: portrait)
 {
-    .GalleryContent{
+    .Gallery{
         grid-template-columns: repeat(2,50%);
         top: 10%;
     }
@@ -241,17 +246,23 @@ ul li a:hover{
 
 .modalCloser{
     position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+    top: 10%;
+    right: 10%;
+    font-size: 3vw;
+    font-weight: 900;
     transition: 0.3;
+    background: -webkit-linear-gradient(#9c9c9c, #FFFFFF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .modalCloser:hover,.modalCloser:focus {
-  color: #b8b8b8;
-  text-decoration: none;
+    background: -webkit-linear-gradient(#7E52C7, #CEB0FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
 }
 
 /* Scrollbar styling*/
@@ -266,4 +277,38 @@ ul li a:hover{
 }
 ::-webkit-scrollbar-thumb {
     background: #c766ff;
+}
+
+/* 3D Modal*/
+.Modal3D{
+  width:100vw;
+  height:100vh;
+  position: absolute;
+  top:0;
+  left:0;
+  display: none;
+  overflow: hidden;
+}
+
+/* Animation Buttons & Container*/
+.AnimationControls{
+    display:flex;
+    flex-direction: column;
+    width:20dvw;
+    height:auto;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-around;
+    gap:10px;
+    top:50%;
+    left:2%;
+}
+.AnimButton{
+    width: 100%;
+    height: 5dvh;
+    font-family: montserrat;
+    font-size: 2.5dvh;
+    font-weight: 600;
+    background: -webkit-linear-gradient(#CEB0FF,#7E52C7);
+    border-radius: 20px;
 }
