@@ -1,12 +1,12 @@
 /*Initial Styling*/
 body{background-image:url(images/PortfolioBG.png);background-color: #202020;}
 body,header,footer,div{margin:0;padding:0;}
-body{height: 100dvh;width: 100dvw;}
+body{height: 100dvh;width: 100dvw;overflow-x: hidden;}
 footer{display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom:0;
 }
@@ -87,7 +87,7 @@ a{color: #CEB0FF;}
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position:absolute;
+    position:fixed;
     width: 100%;
 }
 
@@ -328,4 +328,27 @@ ul li a:hover{
     font-weight: 600;
     background: -webkit-linear-gradient(#CEB0FF,#7E52C7);
     border-radius: 20px;
+}
+
+/* TOS */
+
+#TOSBody p{color:aliceblue;font-family: montserrat;}
+#TOSBody h1,h2,h3,h4{
+    color: #CEB0FF;
+    font-family: montserrat;
+}
+
+@media only screen and (orientation: landscape)
+{
+    #TOSBody{
+        width:auto;
+        padding: 10dvh 30% 10dvh 30%;
+    }
+}
+@media only screen and (orientation: portrait)
+{
+    #TOSBody{
+        width:auto;
+        padding: 10dvh 10% 10dvh 10%;
+    }
 }
