@@ -248,13 +248,22 @@ ul li a:hover{
     position: absolute;
     top: 10%;
     right: 10%;
-    font-size: 3vw;
     font-weight: 900;
     transition: 0.3;
     background: -webkit-linear-gradient(#9c9c9c, #FFFFFF);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+@media only screen and (orientation: landscape)
+{
+    .modalCloser{font-size: 3vw;}
+}
+@media only screen and (orientation: portrait)
+{
+    .modalCloser{font-size: 10vw;}
 }
 
 .modalCloser:hover,.modalCloser:focus {
@@ -311,7 +320,7 @@ ul li a:hover{
 .AnimationControls{
     display:flex;
     flex-direction: column;
-    width:20dvw;
+    width:auto;
     height:auto;
     position: absolute;
     z-index: 1;
@@ -321,13 +330,14 @@ ul li a:hover{
     left:2%;
 }
 .AnimButton{
-    width: 100%;
+    width: auto;
     height: 5dvh;
     font-family: montserrat;
     font-size: 2.5dvh;
     font-weight: 600;
     background: -webkit-linear-gradient(#CEB0FF,#7E52C7);
     border-radius: 20px;
+    color: #202020;
 }
 
 /* TOS */

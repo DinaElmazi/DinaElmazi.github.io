@@ -79,7 +79,6 @@ function init(model) {
 
     //Loop for each clip found
     gltf.animations.forEach((clip) => {
-      console.log("Found animations:", gltf.animations);
       // Animation Button Creation
       const btn = document.createElement('button');
       btn.textContent = clip.name;
@@ -97,6 +96,7 @@ function init(model) {
       });
     });
     }
+    if (gltf.animations.length==0){animButtons.innerHTML = "";};
 
     render();
   }, undefined, (error) => {
