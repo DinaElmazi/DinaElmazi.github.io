@@ -6,7 +6,10 @@ import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 //Model List
 const models = [
     { name: 'Damian', thumb: 'models/Damian/thumbnail.png' },
-    { name: 'Pig', thumb: 'models/Pig/thumbnail.png' }
+    { name: 'Pig', thumb: 'models/Pig/thumbnail.png' },
+    { name: 'Apple', thumb: 'models/Apple/thumbnail.png' },
+    { name: 'Orange', thumb: 'models/Orange/thumbnail.png' },
+    { name: 'FruitCrate', thumb: 'models/FruitCrate/thumbnail.png' }
 ];
 
 //Variables
@@ -23,6 +26,7 @@ models.forEach((model) => {
   const img = document.createElement('img');
   img.src = model.thumb;
   img.alt = model.name;
+  img.className="Thumb3D";
   gallery.appendChild(img);
   img.addEventListener('click', () => init(model));
 });

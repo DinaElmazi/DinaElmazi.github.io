@@ -290,6 +290,23 @@ ul li a:hover{
   overflow: hidden;
 }
 
+.Thumb3D{object-fit: cover;}
+
+@media only screen and (orientation: landscape)
+{
+    .Thumb3D{
+        width:100%;
+        aspect-ratio: 1/1;
+    }
+}
+@media only screen and (orientation: portrait)
+{
+    .Thumb3D{
+        width:100%;
+        aspect-ratio: 1/1;
+    }
+}
+
 /* Animation Buttons & Container*/
 .AnimationControls{
     display:flex;
