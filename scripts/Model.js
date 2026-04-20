@@ -5,6 +5,8 @@ import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 
 //Model List
 const models = [
+    { name: 'CowboyCat', thumb: 'models/CowboyCat/thumbnail.png' },
+    { name: 'MELab', thumb: 'models/MELab/thumbnail.png' },
     { name: 'Damian', thumb: 'models/Damian/thumbnail.png' },
     { name: 'Pig', thumb: 'models/Pig/thumbnail.png' },
     { name: 'Apple', thumb: 'models/Apple/thumbnail.png' },
